@@ -1,0 +1,100 @@
+{
+  "cards": [
+    {
+      "id": "1",
+      "title": "New Apartments",
+      "price": "100.00",
+      "address": "Bahawalpur, Punjab, Pakistan",
+      "image": "https://www.reedyandcompany.com/wp-content/uploads/2023/01/new-apartment-2000x1333.jpeg",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "2",
+      "title": "New Latest Car",
+      "price": "20.00",
+      "address": "Bahawalpur, Punjab, Pakistan",
+      "image": "https://www.indiacarnews.com/wp-content/uploads/2020/12/New-Car-Launches-In-January-2021.jpg",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "3",
+      "title": "AppPic",
+      "price": "123.00",
+      "address": "Bahawalpur, Punjab, Pakistan",
+      "image": "https://ik.imagekit.io/apxxszpa3h/product/102f7f2d-f9eb-4486-acd8-845bb07700f3/images/1734609161_358CF2C6-8FD3-4BED-B457-C70DB305056D.webp",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "4",
+      "title": "Ios Laptop",
+      "price": "50.00",
+      "address": "Bahawalpur, Punjab, Pakistan",
+      "image": "https://www.apple.com/newsroom/images/product/apps/standard/Apple-App-Store-Awards-2022-Trophy_inline.jpg.slideshow-large_2x.jpg",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "5",
+      "title": "Tiny home in Mueang Ngai, Thailand",
+      "price": "73.00",
+      "address": "Thailand Cafe, 95 2nd Ave, New York, New York 10003,",
+      "image": "https://images.squarespace-cdn.com/content/v1/5ac05dad3e2d0940d0038935/cfe0266b-6b55-4754-92fa-9ab639b7c4a5/Hauslein-Settler-Tiny-House-home.jpg",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "6",
+      "title": "Sports Car New",
+      "price": "20.00",
+      "address": "Farid Gate Rd, Bahawalpur, Punjab, Pakistan",
+      "image": "https://images.pexels.com/photos/3972755/pexels-photo-3972755.jpeg?cs=srgb&dl=pexels-garvin-st-villier-719266-3972755.jpg&fm=jpg",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "7",
+      "title": "Apartment 1",
+      "price": "10.00",
+      "address": "Bahawalpur, Punjab, Pakistan",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/547761545.jpg?k=ef8071da1c5e8c64c55a6a46841a6322e0ec0081d1a0b8e3aa4bd565a7e0960a&o=&hp=1",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "8",
+      "title": "Apartments",
+      "price": "10.00",
+      "address": "Allied Bank, Farid Gate Road, Bahawalpur, Punjab, Pakistan",
+      "image": "https://www.tollbrothersapartmentliving.com/wp-content/uploads/2023/03/005_Toll_4_11_19_UnionPl-983x720-1.jpg",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "9",
+      "title": "Best Cars",
+      "price": "130.00",
+      "address": "Sindh, Pakistan",
+      "image": "https://static1.topspeedimages.com/wordpress/wp-content/uploads/2023/09/resize_dsc_0108.jpg",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "10",
+      "title": "New Car",
+      "price": "10.00",
+      "address": "shell, Farid Gate Road, Bahawalpur, Punjab, Pakistan",
+      "image": "https://www.indiacarnews.com/wp-content/uploads/2023/10/2024-Kia-Carnival-1.jpg",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "11",
+      "title": "Sports Car",
+      "price": "10.00",
+      "address": "Shell, Farid Gate Road, Bahawalpur, Punjab, Pakistan",
+      "image": "https://www.carpro.com/hubfs/2024-corvette-north-texas-auto-show-1.jpg",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "12",
+      "title": "My Car",
+      "price": "10.00",
+      "address": "Bahawalpur, Punjab, Pakistan",
+      "image": "https://www.standard.net.au/images/transform/v1/crop/frm/silverstone-feed-data/973564f2-16fd-4aca-b7c8-16af3f7e110f.jpg/r0_0_800_533_w800_h533_fmax.jpg",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    }
+  ]
+}
