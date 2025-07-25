@@ -104,7 +104,8 @@ const AddToCart = () => {
                 </span>
               </div>
               <button
-                className="bg-[#303B97] hover:bg-[#1f2d6f] text-white font-semibold py-3 px-32 rounded transition-colors mb-6 ml-28"
+                className="bg-[#303B97] hover:bg-[#1f2d6f] text-white font-semibold py-3 px-10 sm:px-32 rounded transition-colors mb-6 mx-auto block"
+                style={{ marginLeft: undefined }}
                 onClick={() => {
                   handleAddToCart();
                   notify();

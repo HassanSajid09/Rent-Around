@@ -50,17 +50,17 @@ const NavBar: React.FC = () => {
       <nav className="w-full bg-white shadow-md px-4 py-4 flex flex-col md:flex-row md:items-center">
         {/* Top Bar */}
         <div className="w-full flex items-center justify-between">
-          <div className="flex items-center gap-2 h-24">
+          <div className="flex items-center gap-2 h-20 mr-2 sm:mr-6">
             <img
               src={logo}
               alt="Logo"
-              className="object-contain"
-              style={{ height: "7rem", width: "11rem" }}
+              className="object-contain size-28 md:size-48"
+              style={{ height: undefined, width: undefined }}
             />
           </div>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex flex-1 justify-center">
+          <div className="hidden lg:flex flex-1 justify-center">
             <ul className="flex gap-11 text-lg font-semibold text-black">
               <li>
                 <NavLink to="/">Home</NavLink>
@@ -83,21 +83,48 @@ const NavBar: React.FC = () => {
           </div>
 
           {/* Right Side Icons */}
-          <div className="flex items-center gap-4">
-            <button className="bg-[#303B97] text-white px-3 py-1 rounded-md font-medium hover:bg-white border hover:border-[#303B97] hover:text-[#303B97] transition-all">
+          <div className="flex items-center gap-1 sm:gap-4 flex-nowrap w-auto min-w-0">
+            {/* Add Listing Button */}
+            <button className="bg-[#303B97] text-white px-1 py-1 sm:px-3 sm:py-2 rounded-md font-medium hover:bg-white border hover:border-[#303B97] hover:text-[#303B97] transition-all flex-shrink-0 self-center text-xs sm:text-base min-w-0">
               Add Listing
             </button>
-            <NavLink to="/Cart">
-              <img src={bag} alt="Cart" />
-            </NavLink>
-            <img src={lang} alt="Language" />
-            <div className="flex items-center w-28 border rounded-full px-4 py-2 shadow bg-white cursor-pointer">
-              <HiMenuAlt2 className="size-8" onClick={toggle} />
+
+            {/* Cart Icon */}
+            <NavLink
+              to="/Cart"
+              className="flex items-center justify-center flex-shrink-0 self-center min-w-0"
+            >
               <img
-                src={currentUser ? profileImg || profile : profile}
-                alt="Profile"
-                className="h-8 w-8 rounded-full object-cover"
+                src={bag}
+                alt="Cart"
+                className="h-5 w-5 sm:h-6 sm:w-6 min-w-0"
               />
+            </NavLink>
+
+            {/* Language Icon */}
+            <div className="flex items-center justify-center flex-shrink-0 self-center min-w-0">
+              <img
+                src={lang}
+                alt="Language"
+                className="h-5 w-5 sm:h-6 sm:w-6 min-w-0"
+              />
+            </div>
+
+            {/* Profile + Menu */}
+            {/* On small screens, show only menu icon. On larger screens, show menu icon and profile image in a row. */}
+            <div className="flex items-center flex-shrink-0 self-center min-w-0">
+              <HiMenuAlt2
+                className="size-5 sm:size-7 min-w-0 block sm:hidden"
+                onClick={toggle}
+              />
+              <div className="hidden sm:flex items-center gap-2 rounded-full px-3 py-2 shadow bg-white cursor-pointer">
+                <HiMenuAlt2 className="size-7 min-w-0" onClick={toggle} />
+                <img
+                  src={currentUser ? profileImg || profile : profile}
+                  alt="Profile"
+                  className="h-8 w-8 rounded-full object-cover min-w-0"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -192,31 +219,37 @@ const NavBar: React.FC = () => {
       </nav>
 
       {/* Search Bar */}
-      <div className="flex justify-center pb-14 bg-white">
-        <div className="flex items-center gap-2 bg-white rounded-full shadow-lg px-4 py-3 border w-full max-w-2xl">
-          <img src={locationBlue} alt="Location" className="h-6 w-6" />
-          <input
-            type="text"
-            placeholder="Search Product By Location"
-            className="flex-1 px-2 py-1 outline-none text-gray-700 placeholder-gray-400 bg-transparent"
-          />
-          <span className="text-gray-300 text-xl">|</span>
-          <input
-            type="text"
-            placeholder="Search Product or Service"
-            className="flex-1 px-2 py-1 outline-none text-gray-700 placeholder-gray-400 bg-transparent"
-            value={tempQuery}
-            onChange={handleInputChange}
-            onKeyDown={handleKeyDown}
-          />
-          <img
-            src={globalSearch}
-            alt="Search"
-            className={`size-10 cursor-pointer transition-opacity ${
-              tempQuery.trim() ? "opacity-100" : "opacity-40"
-            }`}
-            onClick={handleSearchClick}
-          />
+      <div className="flex justify-center pb-14 bg-white px-4">
+        <div className="flex sm:flex-row items-center gap-2 bg-white rounded-full shadow-lg px-4 py-3 border w-screen sm:w-auto">
+          <div className="flex items-center w-full sm:w-auto gap-2">
+            <img src={locationBlue} alt="Location" className="h-6 w-6" />
+            <input
+              type="text"
+              placeholder="Search Product By Location"
+              className="flex-1 px-2 py-1 outline-none text-gray-700 placeholder-gray-400 bg-transparent w-full"
+            />
+          </div>
+
+          <span className="hidden sm:inline text-gray-300 text-xl">|</span>
+
+          <div className="flex items-center w-full sm:w-auto gap-2">
+            <input
+              type="text"
+              placeholder="Search Product or Service"
+              className="flex-1 px-2 py-1 outline-none text-gray-700 placeholder-gray-400 bg-transparent w-full"
+              value={tempQuery}
+              onChange={handleInputChange}
+              onKeyDown={handleKeyDown}
+            />
+            <img
+              src={globalSearch}
+              alt="Search"
+              className={`size-10 cursor-pointer transition-opacity ${
+                tempQuery.trim() ? "opacity-100" : "opacity-40"
+              }`}
+              onClick={handleSearchClick}
+            />
+          </div>
         </div>
       </div>
 
